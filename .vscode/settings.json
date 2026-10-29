@@ -1,0 +1,45 @@
+{
+  // Allgemein
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.rulers": [88],
+
+  // Generierte Dateien im Explorer und in der Suche ausblenden
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true
+  },
+  "search.exclude": {
+    "**/.venv": true,
+    "**/*.db": true
+  },
+
+  // Python
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvironment": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  // SQL
+  "[sql]": {
+    "editor.tabSize": 2
+  },
+
+  // Markdown: zwei Leerzeichen am Zeilenende sind ein Zeilenumbruch
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.wordWrap": "on"
+  }
+}
