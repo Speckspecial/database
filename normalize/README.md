@@ -9,6 +9,7 @@
 ## Inhalt
 
 - [Installation](#installation)
+  - [Empfohlene VS Code-Erweiterungen](#empfohlene-vs-code-erweiterungen)
 - [Tabellen anlegen](#tabellen-anlegen)
 - [Interaktiv arbeiten](#interaktiv-arbeiten)
 - [SQL lernen und nachschlagen](#sql-lernen-und-nachschlagen)
@@ -31,7 +32,23 @@ Benötigt wird nur das Kommandozeilenprogramm `sqlite3.exe`.
    sqlite3 --version
    ```
 
-Optional: VS Code-Erweiterung **SQLite Viewer**, um die Datenbank-Datei grafisch anzusehen.
+### Empfohlene VS Code-Erweiterungen
+
+Beim Öffnen des Ordners `database` schlägt VS Code diese Erweiterungen automatisch vor
+(festgelegt in [.vscode/extensions.json](../.vscode/extensions.json)):
+
+| Erweiterung | ID | Zweck |
+|---|---|---|
+| [SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=qwtel.sqlite-viewer) | `qwtel.sqlite-viewer` | Datenbank-Datei (`verein.db`) grafisch ansehen |
+| [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | `ms-python.python` | Python-Unterstützung für die übrigen Projekte im Ordner |
+
+Manuell installieren: In der Seitenleiste **Erweiterungen** (`Strg+Umschalt+X`) nach der ID suchen
+oder im Terminal:
+
+```powershell
+code --install-extension qwtel.sqlite-viewer
+code --install-extension ms-python.python
+```
 
 ## Tabellen anlegen
 
